@@ -1,0 +1,16 @@
+.circle {
+    margin:auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: #FFFF00;
+    /* width and height can be anything, as long as they're equal */
+    margin-bottom:20px;
+    }
+    .title h1{
+        font-family: Helvetica Neue, sans-serif;
+        color: white;
+        padding-top:78px;
+        font-size:35px;
+        text-align:center;
+    }
