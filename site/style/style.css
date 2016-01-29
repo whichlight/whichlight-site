@@ -19,3 +19,7 @@
       margin-top:20px;
       margin-bottom:20px;
     }
+
+p, li{
+  font-size:1.2em;
+}
