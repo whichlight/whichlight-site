@@ -1,15 +1,18 @@
-
+var c=0;
 $(document).ready(function(){
   setInterval(function(){
-  logoAnimate()},500);
+  bloopAnimate()},500);
 });
 
 
-var logoAnimate = function(){
+var bloopAnimate = function(){
+/*
   c+=0.01;
   c%=1;
-  var col = HSVtoRGB(1,c,1);
-  $('.circle').css('background','rgb('+[col.r,col.g,col.b].join(',')+')');
+*/
+
+  var col = HSVtoRGB(Math.random(),1,1);
+  $('#bloopsection').css('background','rgb('+[col.r,col.g,col.b].join(',')+')');
 }
 
 
