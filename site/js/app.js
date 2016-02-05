@@ -1,8 +1,30 @@
 var c=0;
+var projectsShown = false;
+var $projects;
+
 $(document).ready(function(){
   setInterval(function(){
-  bloopAnimate()},500);
+  bloopAnimate()
+
+  var h = $(window).scrollTop() + $(window).height();
+
+  if(h > $(document).height()*0.75 && !projectsShown){
+    projectsShown = true;
+    $('#projects-container').append($projects);
+    console.log('loading');
+    ga('send', 'event', 'Home', 'load', 'home page projects');
+  }
+
+  },500);
+
+
+  emailInit();
+
+
 });
+
+  $projects = $('#projects');
+  $projects.remove();
 
 
 var bloopAnimate = function(){
@@ -39,4 +61,16 @@ function HSVtoRGB(h, s, v) {
         g: Math.round(g * 255),
         b: Math.round(b * 255)
     };
+}
+
+var emailInit = function(){
+  var $a = $('#email');
+  var url = "whichlight";
+  url+="@";
+  url+="gmail";
+  url+=".com";
+  $a.click(function(){
+    ga('send', 'event', 'Home', 'click', 'home page email');
+    alert("Looking forward to hearing from you! My email is " + url);
+  });
 }

@@ -1,4 +1,6 @@
 body{
+  background:#645090;
+  color:#E9FFEF;
 }
 
 .circle {
@@ -13,12 +15,34 @@ body{
 
 
 .title h1{
+
+  color:#00FBFF;
     font-family: Helvetica Neue, sans-serif;
-    color: white;
     padding-top:78px;
     font-size:35px;
     text-align:center;
 }
+
+
+/*
+.info{
+  font-size: 4vw;
+  line-height: 1.2;
+}
+  */
+.social-contact{
+
+  margin-left:0px;
+  margin-right:0px;
+  font-size: 4vw;
+
+  line-height: 1.2;
+}
+
+#projects-container{
+   text-align:center;
+}
+
 
 .footer{
   text-align:center;
@@ -100,8 +124,11 @@ border-width:20px;
  */
 
 
-    a{
-        color: orange;
+a{
+  color:#00FBFF;
+}
+a:hover{
+  color: orange;
 }
 
 
