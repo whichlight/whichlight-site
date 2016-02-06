@@ -1,6 +1,7 @@
 var c=0;
 var projectsShown = false;
 var $projects;
+var $pronounce;
 
 $(document).ready(function(){
   setInterval(function(){
@@ -21,10 +22,40 @@ $(document).ready(function(){
   emailInit();
 
 
+  $("#hear").click(function(){
+    ga('send', 'event', 'Home', 'click', 'name pronounciation');
+    $('.circle').remove();
+   $("#name").append( $pronounce);
+   this.remove();
+  });
+
+
+  setTimeout(function(){titleUpdate()},2000);
+
 });
 
   $projects = $('#projects');
   $projects.remove();
+
+  $pronounce = $('.pronounce');
+  $pronounce.remove();
+
+var words = ['whichlight','interact', 'expression', 'make', 'imagine', 'body', 'voice', 'together','mouth',
+              'dream','play', 'love', 'sounds', 'create', 'touch', 'be', 'public','giggles', 'media', 'art', 'hear', 'see', 'singing', 'everyone'];
+
+var wi =0;
+var titleUpdate = function(){
+  wi++;
+  wi%=words.length;
+  var timeout = 100;
+  word = words[wi];
+  $('.title h1')[0].innerHTML = word;
+  if(word =="whichlight"){timeout*=10;}
+
+  setTimeout(function(){
+    titleUpdate();
+  },timeout);
+}
 
 
 var bloopAnimate = function(){
