@@ -41,7 +41,7 @@ $(document).ready(function(){
   $pronounce.remove();
 
 var words = ['whichlight','interact', 'expression', 'make', 'imagine', 'body', 'voice', 'together','mouth',
-              'dream','play', 'love', 'sounds', 'create', 'touch', 'be', 'public','giggles', 'media', 'art', 'hear', 'see', 'singing', 'everyone'];
+              'dream','play', 'love', 'sounds', 'create', 'touch', 'be', 'public','laughing', 'media', 'art', 'hear', 'see', 'singing', 'everyone, joy'];
 
 var wi =0;
 var titleUpdate = function(){
