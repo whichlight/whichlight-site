@@ -19,10 +19,14 @@ body{
 .title h1{
   color:#00FBFF;
     font-family: Helvetica Neue, sans-serif;
-    font-size:10vw;
+    font-size:50px;
     text-align:center;
     width:100%;
     padding-top:45%;
+}
+
+h1,h2{
+  color:white;
 }
 
 
@@ -132,9 +136,15 @@ a:hover{
   color: orange;
 }
 
-
 #bio-img{
-width:100%;
+  background-image: url('http://i.imgur.com/6BubYO3.jpg');
+  background-position: -0px -0px;
+  height: 349px;
+  animation: play 2.5s steps(20) infinite ;
+}
+
+@keyframes play{
+    100% { background-position: 0 -6980px; }
 }
 
 #name {
@@ -162,4 +172,12 @@ width:100%;
     text-align:center;
     color:white;
     font-size:10vw;
+}
+
+.upcoming{
+  background: #FF6060;
+}
+
+.intro{
+  background:#FF00AB;
 }
