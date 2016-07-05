@@ -105,3 +105,13 @@ var emailInit = function(){
     alert("Looking forward to hearing from you! My email is " + url);
   });
 }
+
+var cover = document.querySelector('#bio-img');
+function setPadding() {
+  var percent = cover.offsetHeight / cover.offsetWidth * 100;
+  cover.style.paddingBottom = percent + "%";
+};
+
+window.addEventListener('resize', setPadding);
+setPadding();
+
