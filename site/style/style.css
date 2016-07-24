@@ -162,7 +162,7 @@ a:hover{
 }
 
 .projects-spacer{
-  height:250vh;
+  height:300vw;
   background: rgba(92,97,255,1);
   background: -moz-linear-gradient(top, rgba(92,97,255,1) 0%, rgba(92,97,255,1) 34%, rgba(189,5,235,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92,97,255,1)), color-stop(34%, rgba(92,97,255,1)), color-stop(100%, rgba(189,5,235,1)));
