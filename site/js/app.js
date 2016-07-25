@@ -32,6 +32,16 @@ $(document).ready(function(){
 
   setTimeout(function(){titleUpdate()},2000);
 
+  //video stuff
+  var drawplayer = new playerjs.Player('drawing-video');
+  drawplayer.on("timeupdate",function(val){
+    if(val.seconds > 1){
+      if($('.logo-title')){
+        $('.logo-title').hide();
+      }
+    }
+  });
+
 });
 
   $projects = $('#projects');
@@ -111,6 +121,8 @@ function setPadding() {
   var percent = cover.offsetHeight / cover.offsetWidth * 100;
   cover.style.paddingBottom = percent + "%";
 };
+
+
 
 window.addEventListener('resize', setPadding);
 setPadding();

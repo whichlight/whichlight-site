@@ -23,6 +23,7 @@ body{
     text-align:center;
     width:100%;
     padding-top:45%;
+    z-index:10;
 }
 
 h1,h2{
@@ -30,12 +31,75 @@ h1,h2{
 }
 
 
-/*
 .info{
-  font-size: 4vw;
-  line-height: 1.2;
+ padding:0px;
+ padding-left:5px;
+ padding-right:5px;
 }
-  */
+
+.info_about{
+  font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size:13.5vw;
+    line-height:12vw;
+    text-transform: uppercase;
+}
+
+.info_speaking{
+
+  font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size:9.5vw;
+    line-height:9vw;
+    text-transform: uppercase;
+}
+
+
+
+.info_store{
+
+  font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size:15.5vw;
+    line-height:14vw;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 40em) {
+  .info_press{
+    font-size:32vw;
+    line-height:25vw;
+  }
+
+  .info_about{
+    font-size: 27.5vw;
+    line-height: 25vw;
+  }
+
+  .info_speaking{
+    font-size: 19.5vw;
+    line-height: 18vw;
+  }
+
+}
+
+.logo-title{
+    font-family: "open sans";
+    font-size: 15vw;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    z-index:10;
+    position:absolute;
+}
+
+#drawing-video{
+  z-index:5;
+  position:absolute;
+}
 
 .social-contact{
   margin-top:10px;
@@ -98,12 +162,9 @@ p, li{
     max-width:none;
 }
 
-.margin{
-    margin-top:20px;
-}
 
-.bio{
-}
+
+
 
 /*
 
@@ -177,9 +238,11 @@ a:hover{
 .projects-spacer h1{
     text-align:center;
     color:white;
-    font-size:10vw;
     font-family: "Open Sans";
     font-weight:800;
+    text-transform: uppercase;
+    font-size: 26vw;
+    line-height: 10vw;
 }
 
 .upcoming{
@@ -187,7 +250,11 @@ a:hover{
 }
 
 .intro{
-  background:#FF00AB;
+  background:#ff9e00;
+}
+
+.speaking{
+  background:#00ff83;
 }
 
 .verb-blurb{
