@@ -80,7 +80,7 @@ h1,h2{
   }
 
   .info_speaking{
-    font-size: 19.5vw;
+    font-size: 19vw;
     line-height: 18vw;
   }
 
@@ -150,6 +150,11 @@ p, li{
 
 .feature{
     margin:5px;
+}
+
+.feature .columns{
+    padding-left:0px;
+    padding-right:0px;
 }
 
 .feature img{
@@ -254,7 +259,7 @@ a:hover{
 }
 
 .speaking{
-  background:#00ff83;
+  background:#00de9b;
 }
 
 .verb-blurb{
