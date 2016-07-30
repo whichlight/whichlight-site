@@ -106,7 +106,7 @@ h1,h2{
 }
 .social-contact p{
 
-  font-size: 3em;
+  font-size: 2.5em;
   line-height:1em;
 }
 
@@ -228,7 +228,7 @@ a:hover{
 }
 
 .projects-spacer{
-  height:300vw;
+  height:28vw;
   background: rgba(92,97,255,1);
   background: -moz-linear-gradient(top, rgba(92,97,255,1) 0%, rgba(92,97,255,1) 34%, rgba(189,5,235,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92,97,255,1)), color-stop(34%, rgba(92,97,255,1)), color-stop(100%, rgba(189,5,235,1)));
@@ -240,13 +240,27 @@ a:hover{
 
 }
 
+.social-contact #creature{
+    font-size: 22vw;
+    line-height: 10vw;
+    margin-bottom:10vw;
+}
+
+.social-contact #social-listings{
+    margin-top:30px;
+    font-size: 14vw;
+    line-height: 12vw;
+    margin-bottom:5vw;
+}
+
 .projects-spacer h1{
+    margin-top:8vw;
     text-align:center;
     color:white;
     font-family: "Open Sans";
     font-weight:800;
     text-transform: uppercase;
-    font-size: 26vw;
+    font-size: 25vw;
     line-height: 10vw;
 }
 
