@@ -330,6 +330,26 @@ a:hover{
   background:#00de9b;
 }
 
+.speaking p{
+  font-size:18px;
+}
+
+
+
+.speaking ul{
+  padding-left:20px;
+
+}
+
+.speaking li{
+  font-size: 18px
+}
+
+.speaking li a{
+  color:#f8ffd4;
+   text-decoration: underline;
+}
+
 .verb-blurb{
   font-size:1.5em;
 }
