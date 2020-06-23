@@ -24,15 +24,16 @@ $(document).ready(function(){
 
   $("#hear").click(function(){
     ga('send', 'event', 'Home', 'click', 'name pronounciation');
-    $('.circle').remove();
+   // $('.circle').remove();
    $("#name").append( $pronounce);
-   this.remove();
+  
   });
 
 
   setTimeout(function(){titleUpdate()},2000);
 
   //video stuff
+  /*
   var drawplayer = new playerjs.Player('drawing-video');
   drawplayer.on("timeupdate",function(val){
     if(val.seconds > 1){
@@ -41,6 +42,7 @@ $(document).ready(function(){
       }
     }
   });
+  */
 
 });
 
